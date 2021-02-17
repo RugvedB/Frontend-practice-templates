@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    color: #606469;
+}
+
+.navigation {
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,.3);
+    height: 63px;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    height: 48px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #f1f3f4;
+}
+
+.search > input{
+    border: none;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+
+.navigation__right{
+    margin-left: 63px;
+}
+
+.navigation__right > div > i{
+    padding: 5px 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    height: 46px;
+    
+}
+
+.profile > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.item{
+    padding: 10px 0px 10px 0px;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.item:hover{
+    background-color: whitesmoke;
+}
+
+.selectedItem{
+    background-color: #e8f0fe;
+    color: #0c6ddc;
+}
+.selectedItem:hover{
+    background-color: #e8f0fe;
+    color: #0c6ddc;
+}
+
+.inner-header{
+    margin: 10px 5px;
+    color: #606469;
+}
+
+.card-main{
+    height: 200px;
+    width: 230px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 10px;
+    border-color: lightgray;
+    margin: 5px 0px ;
+}
+
+.card-img {
+    padding: 10px 10px 0px 10px;
+    height: 120px;
+    background-color: whitesmoke;
+}
+
+.card-text{
+    height: 120px;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.small-card{
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-style: solid;
+    width: 250px;
+    height: 48px;
+    border-width: 0.5px;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+
+.small-card > i {
+    padding: 10px 0px;
+    
+}
+
+.compose{
+    height: 48px;
+    width: 115px;
+    padding: 10px;
+    margin: 10px 0px;
+    
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 30px;
+    border-color: lightgray;
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,.5);
+}
+
+.compose > i {
+    margin-right: 5px;
+}

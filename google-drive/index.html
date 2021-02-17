@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row navigation">
+            <div class="col-2 d-flex align-items-center">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png"
+                    height="32px"
+                />
+                <div class="fs-3 p-1">
+                    Drive
+                </div>
+            </div>
+            <div class="col-7">
+                <!-- Search Box -->
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input class="w-100" placeholder="Search in drive" type="text" />
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex justify-content-between align-items-center navigation__right">
+                    <div style="flex: 0.6;">
+                        <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        <i class="fas fa-cog fa-lg"></i>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-bars"></i>
+                        <div class="profile">
+                            <img 
+                                src="https://lh3.googleusercontent.com/fife/ABSRlIpinDNRXv1oXiMj-zVZ62CAbLLSOBKY8mg2LF2vmFqcKv-9BkQlqPJAYUVKWgKVo3I68NY0zVEneEky3OQb5JIlzBk4ejBUnv4nnt-M6VlwyNnH58EpmPBKfT8ku3qC3X6bUtSjO8Qojb3CdMj-d_98lJhRbp5IBI3LZ79rmxQ7f92f1JAnoEQixJg7NYJgzPBDhN75RSrTqojImEIEf734KLaIIarqLjI1T3qC9mH1OzREnp05H_6M5lJyVi_cVCrVEP5_iuab7mECLXUJ-4IaTsNEhoB19sum_jNyxswH1QwzGm-dQQN8j4tWIOIjA1s6_-Wp5b3tfSCe5ewe2bJpIZZzOPEcoaESUpcl7z_U3cT-I5JFjUh4gUTkyjUIWafmxtVA_zhUfB4qbzkkevA7PK53gGLoePDm4gmfVVB8HfgPt2UAplCfRG81rgSixiSwtrItQ9pJphLJlu0UUR_bYJTnozHZHwD1AZG0llxCDi1ET156Uwo4djkzKCdZaz1R507VAH0mupf4TwGZvcdeYLeqzpgWfrFC-ncU9P-QoHpdJec34bxU-8AAcAXueqvbc1ioNmfvhSx5h_A-bzLzi3a_QWVKcwTkgEne9BgDSsPzf37IHCmSgWlt_twhawJ6DEeAzlHGVqI9bX_-4LXb6aQ2txoZwkMNd2YTepSeMVnxgeYuZMj9-dgG1zAli80tiCrOzaccT4esMxgnm-M_kYYkBAnnJdE8Nz5SVmvisYA=s32-c"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Body -->
+        <div class="row mt-1">
+            <div class="col-md-2 col-12">
+                <div>
+                    <div class="compose d-flex justify-content-center align-items-center">
+                        <i class="fa fa-plus fa-lg" aria-hidden="true"></i> 
+                        New
+                    </div>
+                </div>
+
+                <div class="item d-flex align-items-center">
+                    <div style="flex:0.3;padding-left: 10px;">
+                        <i class="far fa-check-square fa-lg"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        Priority
+                    </div>
+                </div>
+                <div class="item selectedItem d-flex align-items-center mt-2">
+                <div style="flex:0.3;padding-left: 10px;">
+                        <i class="far fa-clock fa-lg" style="color: #0c6ddc;" ></i>
+                    </div>
+                    <div style="text-align: left;color: #0c6ddc;">
+                        Recent
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center mt-2">
+                    <div style="flex:0.3;padding-left: 10px;">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        Starred
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center mt-2">
+                    <div style="flex:0.3;padding-left: 10px;">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        Trash
+                    </div>
+                </div>
+                <hr>
+
+                <div class="item d-flex align-items-center mt-2">
+                    <div style="flex:0.3;padding-left: 10px;">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        Storage
+                    </div>
+                </div>
+
+                <div class="item d-flex align-items-center mt-2">
+                    <div style="flex:0.3;padding-left: 10px;"> </div>
+                    <div style="text-align: left;">
+                        133.91 GB used
+                    </div>
+                </div>
+                
+
+                
+                
+            </div>
+
+
+            <!-- Main -->
+            <div class="col-md-10 col-12">
+
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="fs-2">My Drive</div>
+                    <div>
+                        <i class="fa fa-info-circle fa-lg p-1" aria-hidden="true"></i>
+                        <i class="fa fa-bars fa-lg p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <hr>
+
+                <div style="overflow-y: auto;">
+
+                <p class="inner-header">
+                    Quick Access    
+                </p>
+                <div class="d-flex flex-wrap justify-content-around">
+
+                    <div class="card-main">
+                        <div class="card-img">
+                            <img  
+                                src="./docpreview.png"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                        <div class="card-text">
+                            <p>Icon Todo-List </p>
+                            <p style="font-size: 12px;font-weight: bold;">
+                                RUGVED BONGALE edited today
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-main">
+                        <div class="card-img">
+                            <img  
+                                src="./docpreview.png"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                        <div class="card-text">
+                            <p>Icon Todo-List </p>
+                            <p style="font-size: 12px;font-weight: bold;">
+                                RUGVED BONGALE edited today
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-main">
+                        <div class="card-img">
+                            <img  
+                                src="./docpreview.png"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                        <div class="card-text">
+                            <p>Icon Todo-List </p>
+                            <p style="font-size: 12px;font-weight: bold;">
+                                RUGVED BONGALE edited today
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-main">
+                        <div class="card-img">
+                            <img  
+                                src="./docpreview.png"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
+                        <div class="card-text">
+                            <p>Icon Todo-List </p>
+                            <p style="font-size: 12px;font-weight: bold;">
+                                RUGVED BONGALE edited today
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+                
+                <hr>
+                <p class="inner-header">
+                    Folders    
+                </p>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                    <div class="small-card">
+                        <i class="fa fa-folder" aria-hidden="true"></i>
+                        Backup
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
